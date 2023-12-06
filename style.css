@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+/* font-family name : "Libre Baskerville" ; */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+
+/* font-family name : "Lora" ; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Libre Baskerville";
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+header h1 {
+    font-family: "Lora";
+    font-size: 2.8rem;
+}
+
+header h1 span {
+    color: deeppink;
+}
+
+header .minimenu {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header .minimenu img {
+    height: 1.04rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header .minimenu span {
+    margin-top: 2.2vh;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    width: 52%;
+    justify-content: space-around;
+    margin-top: 2.2vh;
+}
+
+header .header-buttons {
+    padding: 0.6rem;
+    cursor: pointer;
+    background: linear-gradient(to bottom, chartreuse, khaki);
+    border-radius: 32px;
+    border: none;
+}
+
+/* Button style */
+.button {
+    border: none;
+    background: linear-gradient(to bottom, chartreuse, khaki);
+    padding: 0.4rem;
+    width: 38%;
+    border-radius: 32px;
+    font-weight: bold;
+    color: brown;
+    margin: 2.2vh 0;
+    cursor: pointer;
+}
+
+.padding {
+    padding: 2rem;
+}
+
+.heading {
+    font-size: 2.4rem;
+    font-family: "Lora";
+    color: darkturquoise;
+}
+
+
+/* Section One */
+
+.one .left h3 {
+    font-family: "Lora";
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+
+.one .left .feature {
+    display: flex;
+    align-items: center;
+    margin: 2.2vh 0;
+}
+
+.one .left .feature p {
+    font-size: 1.04rem;
+    margin-left: 1.2rem;
+}
+
+.one .left .feature img {
+    height: 2.4rem;
+}
+
+.one .right img {
+    width: 100%;
+    height: auto;
+}
+
+/* For putting the background behind foreground
+.one .right{
+position: relative;
+}
+
+.one .right .background{
+position: absolute;
+top: 0;
+right: 0;
+z-index: -1;
+}
+*/
+
+/* section two */
+
+.two {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.two .left img {
+    width: 100%;
+    height: auto;
+}
+
+.two .right {
+    height: 52vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.two .right h2 {
+    color: darkturquoise;
+    font-family: "Lora";
+}
+
+/* section three */
+
+.three {
+    text-align: center;
+}
+
+.three h5 {
+    font-size: 1.2rem;
+}
+
+.three .offer img {
+    width: 28%;
+    margin: 1.2rem;
+}
+
+.three .offer p {
+    font-size: 1.08rem;
+}
+
+.three .offers .offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+/* section four */
+
+.four {
+    text-align: center;
+}
+
+.four .food-items .food:hover {
+    background: crimson;
+}
+
+.four .food-items .food img {
+    width: 50%;
+    height: 14vh;
+}
+
+.four .food-items .food {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 0.8rem;
+    border: 1.2px solid crimson;
+    border-radius: 20px;
+}
+
+.four .food-items .food button {
+    width: 44%;
+}
+
+.four .food-items .food .price {
+    display: flex;
+    align-items: center;
+    margin-top: 3.4vh;
+    width: 100%;
+    justify-content: space-around;
+}
+
+/* (footer) section five */
+
+footer .member-offer {
+    padding: 2rem;
+    text-align: center;
+}
+
+footer .member-offer h4 {
+    color: darkturquoise;
+    font-size: 1.6rem;
+}
+
+footer .member-offer .input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .member-offer .input input {
+    padding: 0.6rem;
+    width: 84%;
+    margin-top: 2.2vh;
+    border-radius: 20px;
+    border: 1.2px solid green;
+}
+
+footer .details .detail img {
+    height: 1.8rem;
+    cursor: pointer;
+}
+
+footer .details {
+    background: linear-gradient(to right, yellow, lightgreen);
+    text-align: center;
+}
+
+footer .details h2 {
+    padding-top: 1.8vh;
+}
+
+footer .details .detail h4 {
+    color: deeppink;
+    margin: 1.2vh 0;
+}
+
+footer .details .detail {
+    margin: 2.2vh 0;
+}
+
+footer .details .detail ul {
+    list-style: none;
+}
+
+footer .details .boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+/* Media queries section */
+
+/* Tablet version */
+
+@media screen and (min-width : 680px) {
+
+    header .minimenu {
+        display: flex;
+        flex-direction: row;
+        font-weight: bolder;
+    }
+
+    /* section one */
+
+    .one .left h2 {
+        font-size: 2.6rem;
+    }
+
+    .one .left h3 {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+
+    .one .left .button {
+        width: 26%;
+        padding: 0.44rem;
+        font-size: 1.2rem;
+        margin-bottom: 4vh 0;
+    }
+
+    .one .left .features {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* section two */
+
+    .two .right {
+        height: 48vh;
+        justify-content: space-around;
+    }
+
+    .two .right h2 {
+        font-size: 1.8rem;
+    }
+
+    .two .right p {
+        font-size: 1.2rem;
+    }
+
+    /* section three */
+
+    .three .offers .offer {
+        display: flex;
+    }
+
+    .three .offer img {
+        width: 34%;
+    }
+
+    .three .offers {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: 32vh;
+    }
+
+    .three {
+        background: url(./images/section\ three\ background.jpg);
+        background-size: cover;
+    }
+
+    /* section four */
+
+    .four .food-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.6rem;
+    }
+
+    .four .full-menu {
+        width: 44%;
+        align-self: center;
+    }
+
+    /* footer section */
+
+    footer .member-offer {
+        width: 64%;
+        margin: auto;
+    }
+
+    footer .details .boxes {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+
+/* Dekstop version */
+
+@media screen and (min-width : 1040px) {
+
+    /* section two */
+
+    header {
+        display: flex;
+        flex-direction: row;
+        width: 78%;
+        height: 8vh;
+        align-items: center;
+        margin-left: 2.2rem;
+    }
+
+    .one {
+        display: grid;
+        grid-template-columns: 44% auto;
+        position: relative;
+    }
+
+    .one .left .features {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        position: absolute;
+        width: 52%;
+    }
+
+    .one .right img {
+        height: 90vh;
+        width: 100%;
+    }
+
+    /* section two */
+
+    .two {
+        display: grid;
+        grid-template-columns: 40% auto;
+        height: 100vh;
+        align-items: center;
+    }
+
+    /* section three */
+
+    .three {
+        height: 34vh;
+        background: none;
+    }
+
+    .three .offers .offer {
+        width: 74%;
+        margin: auto;
+    }
+
+    /* section four */
+
+    .four .food-items {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .four {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100vh;
+    }
+
+    /* footer section */
+
+    footer {
+        position: relative;
+        display: grid;
+        margin-top: 34vh;
+    }
+
+    footer .member-offer {
+        width: 44%;
+        margin: auto;
+        position: absolute;
+        border: 0.8px solid crimson;
+        background-color: darkslateblue;
+        border-radius: 64px;
+        justify-self: center;
+        top: -26%;
+    }
+
+    footer .details {
+        height: 56vh;
+        display: grid;
+        grid-template-columns: 44% auto;
+        align-items: center;
+    }
+
+
+}
+
+/* ipad pro 1024 px version */
+
+@media screen and (min-width : 1024px) {
+
+    /* section three */
+
+    /* cynohub suggested lay-out */
+
+    .three {
+        height: 48vh;
+        background-size: cover;
+    }
+
+    .three .offers {
+        width: 54%;
+        height: auto;
+        margin: auto;
+    }
+
+
+}
